@@ -1,6 +1,7 @@
 <?php 
 // FUNCTION
 
+
 // Built In Function (fungsi pada php)
 
 // Date / Time
@@ -36,6 +37,38 @@
 // expclode() : untuk mengambil nama sebuah file
 // htmlspecialchars() : untuk mencegah hacker
 
-// utility 
+// utility / fungsi bantuan
+// var_dump() : untuk mencetak isi dari variable, array, object 
+// isset() : digunakan untuk mengecek variable apakah sudah dibuat apa belum, dan akan menghasilkan nilai bolean, true / false
+// empty() : untuk mengecek isi variable sudah di isi / belum 
+// die() : untuk memberhentikan program kita, kita program kita ketemu die(), maka program dibawah nya tidak dieksekusi
+// sleep() : untuk memberhentikan program sementara
+
+
+// USER-DEFINED FUNCTION / fungsi yang kita bikin sendiri
+// kita harus mendefiniskan terlebih dahulu
+
+function salam($waktu = "datang", $nama = "admin!!") {
+    return "selamat $waktu, $nama";
+}
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            font-size: 3em;
+            color: blue;
+            text-align: center;
+            line-height: 50%;
+        }
+    </style>
+    <title>function</title>
+</head>
+<body>
+    <h1><?php echo salam("siang", "melisa"); ?></h1>
+</body>
+</html>
