@@ -56,7 +56,7 @@ $products = [
                           burning time : 4 jam",
         "negara-tujuan" => "Amerika, Jepang, Jerman, China, Korsel, Arab Saudi"
     ]
-]
+    ];
 ?>
 
 <!DOCTYPE html>
